@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowTitle">
+   <string>Flight Log Tracker</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTableWidget" name="missionTable"/>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="formGroupBox">
+      <property name="title">
+       <string>Mission Details</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+
+       <!-- Row 0 -->
+       <item row="0" column="0">
+        <widget class="QLabel" name="dateLabel">
+         <property name="text">
+          <string>Date</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QDateTimeEdit" name="dateInput"/>
+       </item>
+
+       <item row="0" column="2">
+        <widget class="QLabel" name="platformLabel">
+         <property name="text">
+          <string>Platform</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLineEdit" name="platformInput"/>
+       </item>
+
+       <!-- Row 1 -->
+       <item row="1" column="0">
+        <widget class="QLabel" name="chassisLabel">
+         <property name="text">
+          <string>Chassis</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="chassisInput"/>
+       </item>
+
+       <item row="1" column="2">
+        <widget class="QLabel" name="customerLabel">
+         <property name="text">
+          <string>Customer</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLineEdit" name="customerInput"/>
+       </item>
+
+       <!-- Row 2 -->
+       <item row="2" column="0">
+        <widget class="QLabel" name="siteLabel">
+         <property name="text">
+          <string>Site</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="siteInput"/>
+       </item>
+
+       <item row="2" column="2">
+        <widget class="QLabel" name="altitudeLabel">
+         <property name="text">
+          <string>Altitude (m)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLineEdit" name="altitudeInput"/>
+       </item>
+
+       <!-- Row 3 -->
+       <item row="3" column="0">
+        <widget class="QLabel" name="speedLabel">
+         <property name="text">
+          <string>Speed (m/s)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="speedInput"/>
+       </item>
+
+       <item row="3" column="2">
+        <widget class="QLabel" name="spacingLabel">
+         <property name="text">
+          <string>Spacing (m)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QLineEdit" name="spacingInput"/>
+       </item>
+
+       <!-- Row 4 -->
+       <item row="4" column="0">
+        <widget class="QLabel" name="skyLabel">
+         <property name="text">
+          <string>Sky Conditions</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QComboBox" name="skyInput">
+         <item>
+          <property name="text"><string>CLR</string></property>
+         </item>
+         <item>
+          <property name="text"><string>FEW</string></property>
+         </item>
+         <item>
+          <property name="text"><string>SCT</string></property>
+         </item>
+         <item>
+          <property name="text"><string>BKN</string></property>
+         </item>
+         <item>
+          <property name="text"><string>OVC</string></property>
+         </item>
+        </widget>
+       </item>
+
+       <item row="4" column="2">
+        <widget class="QLabel" name="windLabel">
+         <property name="text">
+          <string>Wind (kts)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QLineEdit" name="windInput"/>
+       </item>
+
+       <!-- Row 5 -->
+       <item row="5" column="0">
+        <widget class="QLabel" name="batteryLabel">
+         <property name="text">
+          <string>Battery</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="batteryInput"/>
+       </item>
+
+       <item row="5" column="2">
+        <widget class="QLabel" name="filesizeLabel">
+         <property name="text">
+          <string>Filesize (GB)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="3">
+        <widget class="QLineEdit" name="filesizeInput"/>
+       </item>
+
+       <!-- Row 6 -->
+       <item row="6" column="0">
+        <widget class="QCheckBox" name="isTestInput">
+         <property name="text">
+          <string>Is Test Flight?</string>
+         </property>
+        </widget>
+       </item>
+
+       <item row="6" column="2">
+        <widget class="QLabel" name="outcomeLabel">
+         <property name="text">
+          <string>Outcome</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="3">
+        <widget class="QLineEdit" name="outcomeInput"/>
+       </item>
+
+       <!-- Row 7 -->
+       <item row="7" column="0">
+        <widget class="QLabel" name="issuesHwLabel">
+         <property name="text">
+          <string>HW Issues</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLineEdit" name="issuesHwInput"/>
+       </item>
+
+       <item row="7" column="2">
+        <widget class="QLabel" name="issuesOperatorLabel">
+         <property name="text">
+          <string>Operator Issues</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="3">
+        <widget class="QLineEdit" name="issuesOperatorInput"/>
+       </item>
+
+       <!-- Row 8 -->
+       <item row="8" column="0">
+        <widget class="QLabel" name="issuesSwLabel">
+         <property name="text">
+          <string>SW Issues</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLineEdit" name="issuesSwInput"/>
+       </item>
+
+       <item row="8" column="2">
+        <widget class="QLabel" name="commentsLabel">
+         <property name="text">
+          <string>Comments</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="3">
+        <widget class="QLineEdit" name="commentsInput"/>
+       </item>
+
+       <!-- Row 9 -->
+       <item row="9" column="0">
+        <widget class="QLabel" name="metarLabel">
+         <property name="text">
+          <string>Raw METAR</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1" colspan="3">
+        <widget class="QPlainTextEdit" name="rawMetarInput">
+         <property name="maximumHeight">
+          <number>60</number>
+         </property>
+        </widget>
+       </item>
+
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="saveButton">
+      <property name="text">
+       <string>Save New Mission</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+
+  <!-- Toolbar -->
+  <widget class="QToolBar" name="mainToolBar">
+   <action name="actionRefresh">
+    <property name="text">
+     <string>Refresh</string>
+    </property>
+   </action>
+   <action name="actionDelete">
+    <property name="text">
+     <string>Delete</string>
+    </property>
+   </action>
+  </widget>
+
+  <resources/>
+  <connections/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+</ui>
